@@ -415,6 +415,8 @@ span {
 /**Experience/projects section CSS**/
 .project {
   color: var(--bg-color);
+  margin-bottom: 2rem;
+  min-height: 50vh;
 }
 .project-content {
   display: grid;
@@ -469,6 +471,7 @@ span {
   align-items: center;
   justify-content: center;
   gap: 15rem;
+  margin-top: 0;
 }
 .contact-content {
   display: flex;
