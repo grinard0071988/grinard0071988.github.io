@@ -626,6 +626,10 @@ span {
   h2 {
     margin-bottom: 32px;
   }
+  secton {
+    padding: 8rem 3% 2rem;
+    margin: 0 2rem 0 2rem;
+  }
   h3 {
     margin: 0 0 8px;
     font-size: 24px;
@@ -639,29 +643,13 @@ span {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 5rem;
   }
-
-  /* -------- Landing page ------- */
-  .a-section {
-    padding: 50px 30px;
-  }
-  .a-section .item {
-    margin: 0 12px 60px;
-    width: 260px;
-    height: 360px;
-  }
-  .a-section .item.active {
-    width: 400px;
-  }
-  .a-section .item-desc {
-    transform: translateY(calc(100% - 46px));
-    -webkit-transform: translateY(calc(100% - 46px));
-  }
 }
 
 @media (min-width: 895px) and (max-width: 991px) {
   html {
     font-size: 45%;
   }
+
   h2 {
     margin-bottom: 32px;
   }
@@ -679,23 +667,6 @@ span {
   secton {
     padding: 8rem 3% 2rem;
   }
-
-  /* -------- Landing page ------- */
-  .a-section {
-    padding: 50px 30px 40px;
-  }
-  .a-section .item {
-    margin: 0 12px 60px;
-    width: 240px;
-    height: 330px;
-  }
-  .a-section .item.active {
-    width: 360px;
-  }
-  .a-section .item-desc {
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
-  }
 }
 
 @media (max-width: 894px) {
@@ -705,7 +676,7 @@ span {
   #menu_icon {
     display: block;
     margin-right: 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .navbar {
     position: absolute;
@@ -777,7 +748,18 @@ span {
     width: 100%;
     margin-top: 3rem;
   }
+  .about_content2 {
+    width: 100%;
+  }
+  .about_content2 .about_img img {
+    /* width: 100%; */
+    position: relative;
+    object-fit: cover;
+    width: 80%;
+    height: auto;
+  }
   .f_skill {
+    width: 100%;
     position: relative;
     padding: 10px 8px;
   }
@@ -788,6 +770,7 @@ span {
     display: block;
   }
   .s_skill {
+    width: 100%;
     flex-direction: column;
     margin: 1rem 1rem;
   }
@@ -805,6 +788,13 @@ span {
   .modal-body {
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 375px) {
+  /* CSS ruleset */
+  .project-content {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }
 
