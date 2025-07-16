@@ -5,7 +5,7 @@ function contactForm(e) {
   const message = e.target.message.value;
 
   if (name && email && message) {
-    alert(`Thank you, ${name}! Your message has been sent.`);
+    alert(`Thank you, ${name}! Your message has been sent successfully!.`);
     e.target.reset();
   } else {
     alert("Please fill out all fields.");
@@ -42,15 +42,12 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-const skillDiv = document.querySelector("#skillsonsms");
-h6tag = document.createElement("h6");
-h6tag.innerHTML = "MySQL/PostgreSQL/MongoDB/Node/";
-skillDiv.appendChild(h6tag);
-
 // Get DOM Elements
 const modal = document.querySelector("#my-modal");
 const contactModal = document.querySelector("#contact-modal");
 const modalBtn = document.querySelector("#p_btn");
+const linkProjectBtn = document.querySelector("#link_project");
+
 const openContactModal = document.querySelector("#contact_btn");
 const closeBtn = document.querySelector(".close");
 const closeContactModal = document.querySelector("#c-close");
@@ -58,6 +55,8 @@ const closeContactModal = document.querySelector("#c-close");
 // Events
 modalBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
+
+linkProjectBtn.addEventListener("click", openModal);
 
 window.addEventListener("click", outsideClick);
 window.addEventListener("click", contactOutClick);
@@ -118,3 +117,45 @@ document.addEventListener("keydown", function (e) {
     expModalclose();
   }
 });
+
+//Service section functionality
+const serBox = document.getElementsByClassName("service-box");
+const cirBoxActive = document.getElementsByClassName("circle-box");
+const iconActive = document.querySelectorAll(".i_con");
+
+function myServiceBoxFun(box) {
+  box.style.backgroundColor = "#b4c369";
+}
+function removeServiceBox(box) {
+  box.style.backgroundColor = "";
+}
+function myCircleFun(cir) {
+  cir.style.backgroundColor = "#2d2852";
+  cir.style.left = "20px";
+}
+function iconFun(i) {
+  i.style.color = "#ededed";
+}
+function removeIconFun(i) {
+  i.style.color = "";
+}
+
+function removeCircleFun(cir) {
+  cir.style.backgroundColor = "";
+  cir.style.left = "10px";
+}
+
+for (let i = 0; i < serBox.length; i++) {
+  serBox[i].addEventListener("mouseover", () => myServiceBoxFun(serBox[i]));
+  serBox[i].addEventListener("mouseout", () => removeServiceBox(serBox[i]));
+  cirBoxActive[i].addEventListener("mouseover", () =>
+    myCircleFun(cirBoxActive[i])
+  );
+  cirBoxActive[i].addEventListener("mouseout", () =>
+    removeCircleFun(cirBoxActive[i])
+  );
+  iconActive[i].addEventListener("mouseover", () => iconFun(iconActive[i]));
+  iconActive[i].addEventListener("mouseout", () =>
+    removeIconFun(iconActive[i])
+  );
+}
