@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SIBAportfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
@@ -12,14 +12,16 @@
 
 <body>
   <header class="header">
-     <a href="#home" class="logo_name">Adelo<span>tech_D</span></a>
+     <a href="#home" class="logo_name">ADE<span>TECH_D</span></a>
      <i class="fa-solid fa-bars" id="menu_icon"></i>
      <nav class="navbar">
-         <a href="#home" class="active">About</a>
-         <a href="#about">Skills</a>
-         <a href="#experience">Portfolio</a>
+         <a href="#home" >Villa</a>
+         <a href="#about" class="active">About</a>
+         <a href="#skills">Skills</a>
+         <a href="#experience">Services</a>
+         <a href="#home" id="link_project">Projects</a>
          <a href="#contact">Contact</a>
-         <a href="Code_SIBA_Resume_08102024.pdf" target="_blank" class="r_m">Resume Materials</a>
+         <a href="Code_SIBA_Resume_08102024.pdf" target="_blank" class="r_m">Resume CV</a>
          </nav>
   </header>
   <section class="home" id="home">
@@ -43,7 +45,7 @@
            
        </div>
     <div class="home-img">
-      <img src="Siba.jpg" alt="SIBA">
+      <img src="images/Siba.jpg" alt="SIBA">
      </div>
     
   </section>
@@ -52,13 +54,55 @@
   
   <section class="about" id="about">
       <div class="about-content">
-              <h5>.../About Me...</h5>
+              <h5>.../ABOUT ME...</h5>
 
             <div class="f_skill">
-                <h4>FrontendSkill</h4>
-                <h6>Js/React/Vue/NextJS/React Native/GraphQL/MeoterJsframework</h6>
+                <h4>MY INTRO</h4>
+                <p>As a skilled web developer and programmer, I bring creativity, precision, 
+                    and technical expertise to every project. I specialize in building responsive, 
+                    user-friendly websites using modern frameworks like React, Node.js, and Django. 
+                    My strong understanding of HTML, CSS, JavaScript, and backend technologies allows
+                     me to create seamless user experiences and efficient, scalable applications. 
+                     I'm passionate about clean code, problem-solving, and staying current with 
+                     industry trends. Whether working independently or as part of a team, 
+                     I deliver high-quality solutions on time. My commitment to continuous learning 
+                     and innovation sets me apart as a reliable and forward-thinking developer in 
+                     the tech industry.
+                </p>
+                <h6>Name: <span>Ibrahim Adelodun Saliu Grinard</span></h6>
+                <h6>Email: <span><email>grinardphpprogrammer007@gmail.com</email></span></h6>
+                <h6> Address: <span><Address> 163 Mendip House Edmonton Green, North London</Address></span></h6>
+                <h6>Phone: <span>+447438443247-2</span></h6>
+                <h6>Zip Code: <span> 100101/N9 0TB</span></h6>
+            </div>       
+      </div>
+    <div class="about_content2">
+      <p >Hello! I'm Adelodun_G,I'm fullstack developer,More than 4 years of experience in web development<br>I have a passion for learning new technologies. </p>
+       <div class="about_img">
+           <img src="images/siba_gallary_2.jpg" alt="Adelodun_D">
+       </div>
+      
+    </div>
+    
+    
+  </section>
+  <section class="skills" id="skills">
+    <h1 class="head">SKILLS</h1>
+    <div class="skills-content">
+        <div class="skills-box">
+            <i class="fas fa-laptop-code icon"></i>
+            <div class="skills-inner-con">
+                <div class="s_skill_1"><h4>Frontend</h4>
+                    <h6>HTML/CSS/MaterialUI/UX<br>GraphQL/MeoterJsframework</h6>
+                </div>
+                <div class="s_skill_2"><h4>Frontend</h4>
+                    <h6>JavaScript/React/Vue/NextJS/<br>React Native/GraphQL/</h6>
+                </div>
             </div>
-            <div class="s_skill">
+          </div>
+          <div class="skills-box">
+            <i class="fas fa-code icon"></i>
+            <div class="skills-inner-con">
                 <div class="s_skill_1"><h4>Styles</h4>
                     <h6>SCSS/PostCSS/MaterialUI/<br>TaiwindCSS/MUI/SaSS/</h6>
                 </div>
@@ -66,27 +110,59 @@
                     <h6>K8c/Bash/Dorker/<br>DevTools/MUI/SaSS/Dooker</h6>
                 </div>
             </div>
-          <div class="f_skill" id="skillsonsms" >
-              <h4>BackendSkill</h4>
           </div>
-            <div class="f_skill" id="b_skill">
-                 <h4>BackendSkill</h4>             <h6>MySQL/PostgreSQL/MongoDB/Node/Next/gRPC/Laravel/Micro</h6>
+          <div class="skills-box">
+            <i class="fas fa-laptop-code icon"></i>
+            <div class="skills-inner-con">
+                <div class="s_skill_1"><h4>Backend</h4>
+                    <h6>MySQL/PostgreSQL/MongoDB/<br>Node/Next/gRPC/Laravel</h6>
+                </div>
+                <div class="s_skill_2"><h4>Backend</h4>
+                    <h6>NodeJS/NextJS/gRPC/Laravel/<br>MySQL/PostgreSQL/MongoDB</h6>
+                </div>
             </div>
-        
-              
-      </div>
-    <div class="about_content2">
-      <p >Hello! I'm Adelodun_G,I'm fullstack developer,More than 4 years of experience in web development<br>I have a passion for learning new technologies. </p>
-       <div class="about_img">
-           <img src="siba_gallary_2.jpg" alt="Adelodun_D">
-       </div>
-      
+          </div>
     </div>
-    
-    
+
+
   </section>
 
     <section class="project" id="experience">
+        <h1 class="head">Services for Clients</h1>
+        <div class="service-content" id="service-content">
+            <div class="service-box" id="ser_box-1">
+                <div class="circle-box" ><i class="fas fa-object-ungroup i_con"></i></div>
+                <div class="square-box">
+                    <h2>Web Design</h2>
+                    <h6>We create a wholelistic web pages that is 
+                        embedded with creativity and interactivity for user purpose.</h6>
+                </div>
+            </div>
+            <div class="service-box" id="ser_box-2">
+                <div class="circle-box"><i class="fas fa-laptop-code i_con"></i></div>
+                <div class="square-box">
+                    <h2>Web development</h2>
+                    <h6>We create a wholelistic web pages that is 
+                        embedded with creativity and interactivity for user purpose.</h6>
+                </div>
+            </div>
+            <div class="service-box" id="ser_box-3">
+                <div class="circle-box"><i class="fas fa-window-restore i_con"></i></div>
+                <div class="square-box">
+                    <h2>Web Application</h2>
+                    <h6>We create a wholelistic web pages that is 
+                        embedded with creativity and interactivity for user purpose.</h6>
+                </div>
+            </div>
+            <div class="service-box" id="ser_box-4">
+                <div class="circle-box"><i class="fas fa-database i_con"></i></div>
+                <div class="square-box">
+                    <h2>fullstack Dev</h2>
+                    <h6>We create a wholelistic web pages that is 
+                        embedded with creativity and interactivity for user purpose.</h6>
+                </div>
+            </div>
+        </div>
          <h1 class="head">Experiences</h1>
         <div class="project-content">
             <div class="work_list">
@@ -104,7 +180,7 @@
                     <h6>a year and 2 months</h6>
                 </div>
                 <div class="wl_2">
-                <h4>Web Developer/Coding Instructor|ReactJS,Vue<br>,PHP &PYTHON</h4>
+                <h4>Web Developer/Coding Instructor|ReactJS,<br>Vue,PHP &PYTHON</h4>
                 </div>
             </div>
             <div class="work_list">
@@ -122,11 +198,12 @@
                     <h6>a year(-) and 3 months</h6>
                 </div>
                 <div class="wl_2">
-                <h4>Web Developer/Coding Instructor|ReactJS,Vue<br>,PHP &PYTHON </h4>
+                <h4>Web Developer/Coding Instructor|ReactJS,<br>Vue,PHP &PYTHON </h4>
                 </div>
             </div>
             
         </div>
+        
     </section>
     <section class="contact" id="contact">
         <div class="contact-content">
@@ -136,7 +213,7 @@
             <p>good day, I'm <span>Adelodun_WD</span>, I'm a fullstack developer,More than 4 years of experience </p>
 
              <div class="h_c_btn">
-              <button class="p_btn" id="contact_btn">More articles</button>
+              <button class="p_btn" id="contact_btn">More Projects</button>
               <button class="i_btn"><i class="fa-solid fa-arrow-right"></i></button>
              </div>
 
@@ -160,32 +237,82 @@
             
     </section>
     <footer class="footer">
-        <div class="social">
-            <a href="https://github.com/grinard0071988/" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/grinard-adelodun-74431723b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/Siba007/notthis" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/ibadelodun3814/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.telegram.com/adelodun_gri/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-        </div>
 
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#project">Articles</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-            
-        </ul>
+        <div class="footer-container">
+            <div class="footer-segment">
+              <h3>Let talk about Projects</h3>
+              <p>
+                We are a modern company dedicated to providing the best web
+                solutions for your business. Creative and user-friendly high
+                performance Web Application
+              </p>
+              <a href="#" class="p_btn" id="footer_btn">Learn More..</a>
+
+            </div>
+    
+            <div class="footer-segment">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Home</a></li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="#">About</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="#">Projects</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-segment">
+              <h3>Services Links</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="#">Web Application</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="#">FullStack Dev</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="#">UI/UX Graphic</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="#">Business Strategy</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="footer-segment footer-contact">
+              <h3>Contact Us</h3>
+              <p><i class="fa-solid fa-envelope"></i> Email: grinardphpprogrammer007@gmail.com</p>
+              <p><i class="fa-solid fa-phone-volume"></i> Phone: +44 74 384 432 47</p>
+              <p><i class="fa-solid fa-address-book"></i> Address: 123 Main Street, Anytown, London England</p>
+
+              <h3>Follow Us</h3>
+              <div class="social">
+                <a href="https://github.com/grinard0071988/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/grinard-adelodun-74431723b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/Siba007/notthis" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ibadelodun3814/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.telegram.com/adelodun_gri/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            </div>
+          </div>
         
     </footer>
 
@@ -196,14 +323,26 @@
           <h2>My Projects</h2>
         </div>
         <div class="modal-body">
+            <a href="#" class="model-link" target="_blank">
             <div class="m-b-1">
-                <p>Welcome to project 1: </p>
-                  <p>A modal is a dialog box/popup window that is displayed on top of the current page.</p>
-            </div>
+                <p>Welcome to YCBLOG SITE: </p>
+                  <p class="modal-para">Where trending articles that benefits human mental health are posted.</p>
+            </div></a>
+            <a href="https://grinard0071988.github.io/" class="model-link" target="_blank">
             <div class="m-b-2">
-                <p>Welcome to project 2: </p>
-                  <p>A modal is a dialog box/popup window that is displayed on top of the current page.</p>
-            </div>
+                <p>Welcome to PORTFOLIO SITE: </p>
+                  <p class="modal-para">where details about me as Web developer and Programmer are showcase.</p>
+            </div></a>
+            <a href="" class="model-link" target="_blank">
+                <div class="m-b-3">
+                    <p>Welcome to Banklist SITE: </p>
+                      <p class="modal-para">Where trending articles that benefits human mental health are posted.</p>
+                </div></a>
+            <a href="" class="model-link" target="_blank">
+                <div class="m-b-4">
+                    <p>Welcome to PORTFOLIO SITE: </p>
+                    <p class="modal-para">where details about me as Web developer and Programmer are showcase.</p>
+                </div></a>
           
         </div>
       </div>
@@ -216,14 +355,16 @@
           <h2>My Projects</h2>
         </div>
         <div class="contact-modal-body">
+            <a href="" class="contact-m-link">
             <div class="m-1">
                 <p>Welcome to project 1: </p>
                   <p>A modal is a dialog box/popup window that is displayed on top of the current page.</p>
-            </div>
+            </div></a>
+            <a href="https://grinard0071988.github.io/" class="contact-m-link" target="_blank">
             <div class="m-2">
                 <p>Welcome to project 2: </p>
                   <p>A modal is a dialog box/popup window that is displayed on top of the current page.</p>
-            </div>
+            </div></a>
 
         </div>
       </div>
